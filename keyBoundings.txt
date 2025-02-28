@@ -1,0 +1,47 @@
+// CHANGE LIGHT POSITION
+-----------------------------------------------
+// Press LEFT-CTRL to modify the position of the light source. The camera will jump to the position of the light source and you can move it as usual (by pressing W, S, A, D, etc). In order to release the light source press the LEFT-CTRL again. The camera will jump to its previous position (before the first LEFT-CTRL).
+
+
+// CHANGE PARAMETERS
+-----------------------------------------------
+// Press T to modify the value of r
+// Press Y to modify the value of z_min (only makes a difference when using the depth-based shader)
+// Press G to linearize depth (only makes a difference when using the depth-based shader)
+// Press H to deactivate linearizing the depth (only makes a difference when using the depth-based shader)
+
+
+// CHANGE MODEL
+-----------------------------------------------
+// Press 1 to change the mode to head
+// Press 2 to change the mode to bunny
+// Press 3 to change the mode to boss
+// Press 4 to change the mode to terrain#1
+// Press 5 to change the mode to terrain#2
+// Press 6 to change the mode to terrain#3
+
+
+// CHANGE TEXTURE
+-----------------------------------------------
+// Press U to change the texture to skin
+// Press I to change the texture to gold
+// Press J to change the texture to aerial#1
+// Press K to change the texture to aerial#2
+
+// CHANGE SHADER
+-----------------------------------------------
+// Press O to change the shader to near-silhouette
+// Press P to change the shader to plastic and metal (phong like)
+// Press L to change the shader to depth-based
+
+
+// EXAMPLE
+-----------------------------------------------
+As an example lets say you want to render terrain#1 with aerial#1 as the texture and depth-base algorithm as the shader. Press 4 -> J -> L then press T and enter 1000.
+
+// NOTE
+-----------------------------------------------
+1. Don't forget to change the shader. For, terrains you need to press L. For the other objects press O or P.
+2. I recommend r = 6 for near-silhouette
+3. I recommend r = 1 or 2 for metal and plastic (phong like shader).
+4. I recommend r = 1000 or higher for depth-base shader. The default values for Z_min = 0.1 and linearized = true should work well. 
